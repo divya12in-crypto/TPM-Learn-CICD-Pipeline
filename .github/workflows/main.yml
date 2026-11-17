@@ -13,8 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Validate README
+      - name: Validate configuration file
         run: |
-          echo "Starting automated validation..."        
-test -f REQUIRED_CONFIG.txt
-          echo "SUCCESS: README file exists!"
+          echo "Starting automated validation..."
+          test -f REQUIRED_CONFIG.txt
+          echo "SUCCESS: Required configuration file exists!"
