@@ -16,5 +16,7 @@ jobs:
       - name: Validate README
         run: |
           echo "Starting automated validation..."
-          test -f README.md
+          
+test -f REQUIRED_CONFIG.txt
+
           echo "SUCCESS: README file exists!"
